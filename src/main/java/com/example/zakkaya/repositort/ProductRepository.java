@@ -13,7 +13,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 
 
     //ここはあとで修正する箇所
-    @Modifying
-    @Query("UPDATE Product p SET p.stock = p.stock - ?2 WHERE p.productId = ?1 AND p.stock >= ?2")
-    int decreaseStock(Integer productId, Integer quantity);
+    // @Modifying
+    // @Query("UPDATE Product p SET p.stock = p.stock - ?2 WHERE p.productId = ?1 AND p.stock >= ?2")
+    // int decreaseStock(Integer productId, Integer quantity);
 }

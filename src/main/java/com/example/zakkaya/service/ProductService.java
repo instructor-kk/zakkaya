@@ -1,11 +1,13 @@
 package com.example.zakkaya.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.zakkaya.repositort.*;
 import com.example.zakkaya.entity.*;
 import java.util.*;
 
+@Service
 public class ProductService {
 private final ProductRepository productRepository;
 

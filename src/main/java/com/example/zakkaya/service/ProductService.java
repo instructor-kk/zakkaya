@@ -28,4 +28,7 @@ private final ProductRepository productRepository;
     }
 
     //categoryIdでProductを検索する
+    public List<Product> findProductsByCategoryId(Integer categoryId) {
+        return productRepository.findProductsByCategoryId(categoryId);
+    }
 }

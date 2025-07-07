@@ -7,9 +7,13 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.*;
+
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Integer> {
     
+    //categoryIdから商品を検索
+    List<Product> findProductsByCategoryId(Integer categoryId);
 
 
     //ここはあとで修正する箇所

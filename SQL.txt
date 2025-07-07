@@ -1,0 +1,10 @@
+SQL
+
+
+
+UPDATE products SET category_id = 2 where product_id = 1;
+UPDATE products SET category_id = 2 where product_id = 2;
+UPDATE products SET category_id = 2 where product_id = 3;
+UPDATE products SET category_id = 2 where product_id = 4;
+
+select * from products
